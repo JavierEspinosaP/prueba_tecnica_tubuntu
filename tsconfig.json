@@ -1,7 +1,23 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "esnext",                           // Set the target to ESNext to use the latest ECMAScript features
+    "module": "esnext",                           // Use esnext for compatibility with ESM
+    "lib": ["dom", "esnext"],                     // Support for DOM and the latest ECMAScript features
+    "jsx": "react-jsx",                           // Configuration for JSX with React
+    "strict": true,                               // Enable all strict type-checking options
+    "moduleResolution": "node",                   // Use Node.js module resolution
+    "esModuleInterop": true,                      // Enable interoperability with ESModules
+    "skipLibCheck": true,                         // Skip type checking of declaration files of third-party libraries
+    "forceConsistentCasingInFileNames": true,     // Ensure consistent casing in file names
+    "resolveJsonModule": true,                    // Allow importing JSON files
+    "isolatedModules": true,                      // Ensure all files are treated as modules
+    "allowSyntheticDefaultImports": true,         // Allow synthetic default imports (useful for compatibility with Babel)
+    "baseUrl": ".",                               // Define the base for relative paths
+    "paths": {
+      "@/*": ["./src/*"]                          // Alias for shorter paths in your code
+    },
+    "types": ["vitest/globals"]                   // Include global types for Vitest
+  },
+  "include": ["src/**/*", "vitest-setup.ts"],     // Include source files and Vitest setup file
+  "exclude": ["node_modules"]                     // Exclude the node_modules folder
 }
