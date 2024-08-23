@@ -18,6 +18,8 @@ describe('App component', () => {
       loading: false,
       error: null,
       reloadUsers: vi.fn(),
+      isFetching: false, // Añadir isFetching al mock
+
     });
 
     render(<App />);
@@ -32,6 +34,8 @@ describe('App component', () => {
       loading: false,
       error: 'Error fetching data',
       reloadUsers: vi.fn(),
+      isFetching: false, // Añadir isFetching al mock
+
     });
 
     render(<App />);
@@ -46,6 +50,8 @@ describe('App component', () => {
       loading: true,
       error: null,
       reloadUsers: vi.fn(),
+      isFetching: false, // Añadir isFetching al mock
+
     });
 
     render(<App />);  
@@ -100,6 +106,8 @@ describe('App component', () => {
       loading: false,
       error: null,
       reloadUsers: vi.fn(),
+      isFetching: false, // Añadir isFetching al mock
+
     });
 
     render(<App />);  
@@ -154,6 +162,8 @@ describe('App component', () => {
       loading: false,
       error: null,
       reloadUsers: reloadUsersMock,
+      isFetching: false, // Añadir isFetching al mock
+
     });
 
     render(<App />); 

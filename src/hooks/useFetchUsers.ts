@@ -9,10 +9,16 @@ export const useFetchUsers = () => {
   const [loading, setLoading] = useState<boolean>(true);
   // State to track any errors during the fetch
   const [error, setError] = useState<string | null>(null);
+  const [isFetching, setIsFetching] = useState<boolean>(false); // Nuevo estado
+
 
   // Function to fetch user data from the API
   const fetchData = async () => {
+    if (isFetching) return; // Si ya estamos haciendo una solicitud, no hacer otra
+    setIsFetching(true); // Establece isFetching a true al iniciar la solicitud
     setLoading(true);
+    setIsFetching(false); // Restablecer isFetching a false después de completar la solicitud
+
     try {
       const response = await axios.get('https://random-data-api.com/api/v2/users?size=96');
       // Transform the data to match the expected User interface
@@ -72,5 +78,5 @@ export const useFetchUsers = () => {
     fetchData();
   };
 
-  return { users, loading, error, reloadUsers };
+  return { users, loading, error, reloadUsers, isFetching }; // Devuelve isFetching
 };
