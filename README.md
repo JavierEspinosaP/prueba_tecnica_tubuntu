@@ -103,7 +103,7 @@ This application is a React-based project that fetches and displays user informa
 
    This will start the application in development mode. You can access it at 
    
-   ``http://localhost:3000``
+   ``http://localhost:5173``
 
 4. **Build for production**:
 
