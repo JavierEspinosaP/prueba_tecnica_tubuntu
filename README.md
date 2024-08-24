@@ -2,6 +2,12 @@
 
 This project is a technical test built with React, TypeScript, and Tailwind CSS. It leverages Vite for fast development and includes testing capabilities using Vitest. The project is designed to be modular and easy to maintain, with a focus on performance and modern development practices.
 
+## Deployment
+
+You can view the deployed application at the following link:
+
+[https://prueba-tubuntu-javier-espinosa.netlify.app](https://prueba-tubuntu-javier-espinosa.netlify.app)
+
 ## Features
 
 - **React**: A component-based approach to building user interfaces.
@@ -75,7 +81,7 @@ This application is a React-based project that fetches and displays user informa
 
 1. **Clone the repository**:
 
-   ``git clone https://github.com/your-username/prueba_tecnica_tubuntu.git``
+   ``git clone https://github.com/JavierEspinosaP/prueba_tecnica_tubuntu.git``
 
    ``cd prueba_tecnica_tubuntu``
 
@@ -133,7 +139,7 @@ This application is a React-based project that fetches and displays user informa
 
 - **Run tests with UI**:
 
-  ``npm run test:ui``
+  ``pnpm run test:ui``
 
   or
 
