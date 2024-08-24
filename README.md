@@ -153,7 +153,3 @@ This application is a React-based project that fetches and displays user informa
 - **ESLint**: Linting is set up to ensure code quality and consistency.
 - **Tailwind CSS**: Utility classes are used for styling, making it easy to build responsive designs.
 
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
